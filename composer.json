@@ -1,0 +1,17 @@
+{
+    "name": "zloadmin/laravel-keep2share",
+    "description": "Keep2share API client for laravel",
+    "autoload": {
+        "psr-4": {
+            "Zloadmin\\LaravelKeep2shareApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladimir Karpovich",
+            "email": "dev.karpovich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
