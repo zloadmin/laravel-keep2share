@@ -3,16 +3,16 @@
     "description": "Keep2share API client for laravel",
     "autoload": {
         "psr-4": {
-            "Zloadmin\\LaravelKeep2shareApi\\": "src/"
+            "LaravelKeep2Share\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Keep2Share\\Providers\\Keep2ShareServiceProvider"
+                "LaravelKeep2Share\\Providers\\Keep2ShareServiceProvider"
             ],
             "aliases": {
-                "Keep2Share": "Keep2Share\\Facades\\Keep2Share"
+                "Keep2Share": "LaravelKeep2Share\\Facades\\Keep2Share"
             }
         }
     },

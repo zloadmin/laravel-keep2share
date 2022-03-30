@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Keep2Share;
+namespace LaravelKeep2Share;
 /**
  * Class Keep2ShareAPI
  *

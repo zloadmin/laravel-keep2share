@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Keep2Share\Facades;
+namespace LaravelKeep2Share\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

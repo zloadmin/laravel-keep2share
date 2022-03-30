@@ -1,10 +1,10 @@
 <?php
 
 declare(strict_types=1);
-namespace Keep2Share\Providers;
+namespace LaravelKeep2Share\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Keep2Share\Keep2Share;
+use LaravelKeep2Share\Keep2Share;
 
 /**
  * Class Keep2ShareServiceProvider
