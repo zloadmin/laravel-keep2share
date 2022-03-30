@@ -15,8 +15,6 @@ OR username and password
 
 `KEEP2SHARE_PASSWORD=your_password`
 
-You can publish config file use command
-
 ## Using method getBalance()
 ```php
 <?php
