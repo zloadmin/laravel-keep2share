@@ -6,6 +6,16 @@
             "Zloadmin\\LaravelKeep2shareApi\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Keep2Share\\Providers\\Keep2ShareServiceProvider"
+            ],
+            "aliases": {
+                "Keep2Share": "Keep2Share\\Facades\\Keep2Share"
+            }
+        }
+    },
     "authors": [
         {
             "name": "Vladimir Karpovich",
