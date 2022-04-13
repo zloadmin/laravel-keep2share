@@ -2,6 +2,8 @@
 declare(strict_types=1);
 
 namespace LaravelKeep2Share;
+
+
 /**
  * Class Keep2ShareAPI
  *
@@ -219,7 +221,7 @@ class Keep2Share
         ));
     }
 
-    public function createFolder($name, $parent = '/', $access = Keep2ShareAPI::FILE_ACCESS_PUBLIC, $is_public = false)
+    public function createFolder($name, $parent = '/', $access = self::FILE_ACCESS_PUBLIC, $is_public = false)
     {
         return $this->request('createFolder', array(
             'name'      => $name,
@@ -292,7 +294,7 @@ class Keep2Share
         ));
     }
 
-    public function createFileByHash($md5, $name, $parent = null, $access = Keep2ShareAPI::FILE_ACCESS_PUBLIC)
+    public function createFileByHash($md5, $name, $parent = null, $access = self::FILE_ACCESS_PUBLIC)
     {
         return $this->request('createFileByHash', array(
             'hash'   => $md5,
@@ -357,7 +359,7 @@ class Keep2Share
             $curl = curl_init();
 
             $postFields = $data['form_data'];
-            $postFields[$data['file_field']] = new CURLFile($file);
+            $postFields[$data['file_field']] = new \CURLFile($file);
 
             curl_setopt_array($curl, [
                 CURLOPT_FOLLOWLOCATION => false,
